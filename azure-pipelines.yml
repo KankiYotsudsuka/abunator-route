@@ -60,6 +60,15 @@ stages:
       displayName: 'Upload package'
       artifact: drop
     
+- stage: Test
+  displayName: 'Test Web App'
+  jobs:
+    - job: Testjob
+      steps:
+      - script: |
+          pytest app.py
+      displayName: 'Test with pytest'
+
 
 - stage: Deploy
   displayName: 'Deploy Web App'
