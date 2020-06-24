@@ -28,3 +28,7 @@ def setRecord():
     with get_connection() as con:
             with con.cursor() as cur:
                 cur.execute("delete from record")
+        
+def keyMaker(key):
+    KhorVirap = str(key[0:10])
+    return KhorVirap
