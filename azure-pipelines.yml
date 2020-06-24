@@ -65,11 +65,14 @@ stages:
   jobs:
     - job: Testjob
       steps:
+      - task: UsePythonVersion@0
+        displayName: 'Use Python $(pythonVersion)' 
+        inputs:
+          versionSpec: '$(pythonVersion)'            
       - script: |
-          python -m pip install pytest
-          python -m pytest test_last
-#          pytest test_last.py
-      displayName: 'Test with pytest'
+          python -m pip install flake8
+          flake8 app.py
+        displayName: 'Run lint tests'
 
 
 - stage: Deploy
