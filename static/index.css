@@ -27,16 +27,16 @@ h1{
 	0px 0px 80px #ffffff;
 }
 
-/*前回の結果を表示する部分*/
+/*タイトルの最初の文字を赤色指定*/
+.f-big:first-letter{
+	color:#DB1D32;
+}
+
+/*前回の結果の表示*/
 .lastresult{
     color:#000000;
     text-align:center;
     font-weight:bold;
-}
-
-/*タイトルの最初の文字を赤色指定*/
-.f-big:first-letter{
-	color:#DB1D32;
 }
 
 /*図鑑へのリンク*/
