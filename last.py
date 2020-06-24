@@ -5,6 +5,7 @@ sys.path.append("/abunator_route/")
 import psycopg2
 import app
 
+#乱数を受け取って、DBから前回の検索結果を呼び出す
 def get_connection():
     return psycopg2.connect(host="abunator.postgres.database.azure.com",database="Abunator",user="teamD@abunator",port=5432, password="Nagato1109")
 
