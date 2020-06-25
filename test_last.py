@@ -1,8 +1,5 @@
 
 import pytest
-import psycopg2
- # テスト対象のモジュールをインポートする
-
 
 def test_key():
     key = ('0000000000true')
