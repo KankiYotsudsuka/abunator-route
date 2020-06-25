@@ -72,7 +72,7 @@ stages:
       - script: |
           python -m pip install pytest
           python -m pytest test_last.py
-        displayName: 'Run with pytests'
+        displayName: 'Run with pytest'
 
 
 - stage: Deploy
